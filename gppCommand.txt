@@ -1,1 +1,1 @@
-g++ main.cpp testing.cpp -o main
+g++ main.cpp intro.cpp -o main -O2
