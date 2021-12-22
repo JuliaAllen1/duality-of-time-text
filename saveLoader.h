@@ -1,1 +1,10 @@
-int saveLoader();
+#include <string>
+int loadAbilScore();
+std::string name();
+std::string charName;
+int str;
+int dex;
+int con;
+int intel;
+int wis;
+int cha;
