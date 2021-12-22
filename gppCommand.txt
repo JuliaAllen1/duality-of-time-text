@@ -1,1 +1,1 @@
-g++ main.cpp intro.cpp -o main -O2
+g++ main.cpp intro.cpp saveLoader.cpp -o main -O2

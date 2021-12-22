@@ -4,8 +4,12 @@
 #include <unistd.h>
 #include <string>
 #include "intro.h"
+#include "saveLoader.h"
+#include <limits>
 using namespace std;
-string test ="a";
+
+
 int main(){
 dualityIntro();
+saveLoader();
 }
