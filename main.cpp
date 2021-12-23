@@ -7,6 +7,7 @@
 #include "saveLoader.h"
 #include <limits>
 #include <fstream>
+#include <regex>
 using namespace std;
 
 //saveLoading stuff
@@ -50,7 +51,5 @@ int loadAbilScore(){
 
 int main(){
 dualityIntro();
-name();
-cout << charName;
-
+cout << "Continue from save (c)\n\nStart new game (n)";
 }
