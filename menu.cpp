@@ -3,12 +3,11 @@
 #include <unistd.h>
 #include <limits>
 #include <fstream>
+#include "saveCreate.h"
+#include "menu.h"
 
 using namespace std;
-string menuOptionSel = "";
-int saveCreate(){
-    return 0;
-};
+
 
 string optCheck(){
     if (menuOptionSel == "l"){
@@ -20,15 +19,15 @@ string optCheck(){
             saveCreate();
         }
         else {
-            c << "ERR: Invalid option. \n\n";
+            cerr << "ERR: Invalid option. \n\n";
             cout << "Continue from save (c)\n\nStart new game (n)";
             optCheck();
         }
     }
-    return "";
+    return menuOptionSel;
 }
 
-int main(){
-    cin >> menuOptionSel;
+int menu(){
     optCheck();
+    return 0;
 }
