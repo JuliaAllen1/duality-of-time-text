@@ -8,16 +8,12 @@
 #include <limits>
 #include <fstream>
 #include <regex>
+#include "saveCreate.h"
+#include "menu.h"
 using namespace std;
 
 //saveLoading stuff
-std::fstream& goToLine(std::fstream& file, unsigned int num){
-    file.seekg(std::ios::beg);
-    for(int i=0; i < num - 1; ++i){
-        file.ignore(std::numeric_limits<std::streamsize>::max(),'\n');
-    }
-    return file;
-}
+
 string nameAndClass(){
     fstream save("save");
     goToLine(save, 2);
@@ -51,5 +47,7 @@ int loadAbilScore(){
 
 int main(){
 dualityIntro();
-cout << "Continue from save (c)\n\nStart new game (n)";
+cout << "Continue from save (c)\n\nStart new game (n)\n\n";
+cin >> menuOptionSel;
+optCheck(); 
 }
