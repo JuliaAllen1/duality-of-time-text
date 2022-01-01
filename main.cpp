@@ -3,13 +3,13 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <string>
-#include "intro.h"
-#include "saveLoader.h"
+#include "headers/intro.h"
+#include "headers/saveLoader.h"
 #include <limits>
 #include <fstream>
 #include <regex>
-#include "saveCreate.h"
-#include "menu.h"
+#include "headers/saveCreate.h"
+#include "headers/menu.h"
 using namespace std;
 
 //saveLoading stuff

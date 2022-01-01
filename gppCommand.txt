@@ -1,1 +1,1 @@
-g++ main.cpp menu.cpp intro.cpp saveCreate.cpp -o main -O2
+g++ main.cpp menu.cpp intro.cpp saveCreate.cpp -o main -O2 -std=c++17
